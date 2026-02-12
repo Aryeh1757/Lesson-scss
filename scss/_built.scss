@@ -72,4 +72,18 @@
     &__p--ai {
         @include textNormal(1.125rem, 400, 150%);
     }
+
+    @media (max-width: 767px) {
+        &__bottom {
+            grid-template-columns: 1fr;
+        }
+
+        .hiden-mobile {
+            display: none;
+        }
+    }
+
+    @media (min-width: 768px) and (max-width: 1023px) {}
+
+    @media (min-width: 1024px) {}
 }

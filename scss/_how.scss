@@ -46,6 +46,10 @@
         @include textNormal(1.125rem, 400, 150%, $color: $dark-font);
         padding-top: 1rem;
     }
+
+    &__img--center {
+        width: 100%;
+    }
 }
 
 @keyframes transition {

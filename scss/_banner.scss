@@ -3,7 +3,8 @@
 
 .banner {
     background-image: url(../img/bg-banner.png);
-    background-size: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
 
     &__main {
         justify-content: center;
@@ -30,4 +31,15 @@
         @include fl(center, center, 0);
         padding-bottom: 3.8125rem;
     }
+
+    @media (max-width: 767px) {
+        &__btn {
+            width: 90%;
+            text-align: center;
+        }
+    }
+
+    @media (min-width: 768px) and (max-width: 1023px) {}
+
+    @media (min-width: 1024px) {}
 }

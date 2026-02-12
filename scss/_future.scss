@@ -43,6 +43,7 @@
         width: 120%;
         flex-shrink: 0;
         overflow: hidden;
+        margin-bottom: 7.5rem;
     }
 
     &__card--slider {
@@ -84,4 +85,49 @@
         @include textNormal(1.25rem, 600, 140%, $dark-font, center);
         border-bottom: rgba(0, 0, 0, 0.3) .125rem solid;
     }
+
+    &__mobile--controller {
+        display: none;
+    }
+
+    @media (max-width: 767px) {
+        &__card--slider {
+            width: 90%;
+        }
+
+        &__slider {
+            margin-bottom: 2rem;
+        }
+
+        &__right--controller {
+            display: none;
+        }
+
+        &__mobile--controller {
+            display: flex;
+            margin-bottom: 3.125rem;
+            gap: 1rem;
+        }
+    }
+
+    @media (min-width: 768px) and (max-width: 1023px) {
+        &__right--controller {
+            width: 40%;
+            margin-left: 2rem;
+        }
+
+        &__card--slider {
+            background-size: cover;
+        }
+
+        &__main--card {
+            height: 14.1875rem;
+        }
+
+        &__btn--slider {
+            width: 8.4375rem;
+        }
+    }
+
+    @media (min-width: 1024px) {}
 }

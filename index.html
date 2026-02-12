@@ -16,15 +16,16 @@
                     <ul class="header__list header__fl">
                         <li class="header__item"><a href="" class="header__logo"><img src="img/Logo.png" alt="logo"></a>
                         </li>
-                        <li class="header__item"><a href="" class="header__link">Features</a></li>
-                        <li class="header__item"><a href="" class="header__link">Resources</a></li>
-                        <li class="header__item"><a href="" class="header__link">Pricing</a></li>
+                        <li class="header__item" id="mobile-hide"><a href="" class="header__link">Features</a></li>
+                        <li class="header__item" id="mobile-hide"><a href="" class="header__link">Resources</a></li>
+                        <li class="header__item" id="mobile-hide"><a href="" class="header__link">Pricing</a></li>
                     </ul>
                 </nav>
             </div>
             <div class="header__right header__fl">
-                <a href="" class="btn btn--tr">Sign in</a>
+                <a href="" class="btn btn--tr" id="mobile-hide">Sign in</a>
                 <a href="" class="btn btn--bl">Sign up</a>
+                <button class="header__burger"><img src="img/burger.png" alt=""></button>
             </div>
         </div>
     </header>
@@ -73,7 +74,27 @@
                 </div>
             </div>
             <div class="accelerate__right">
-                <img src="img/knowledge-base.png" alt="" class="accelerate__img">
+                    <img src="img/knowledge-base.png" alt="" class="accelerate__img">
+            </div>
+            <div class="accelerate__mobile">
+                <div class="accelerate__answers desktop-hide">
+                    <div class="accelerate__line"></div>
+                    <h1 class="accelerate__instant-answerds">Questionnaires</h1>
+                    <p class="accelerate__p">
+                        Find trustworthy answers from across your knowledge base. Equip your team with the technical
+                        baseline to sell effectively and advise customers.
+                    </p>
+                    <img src="img/mobile-accelerate1.png" alt="" class="accelerate__img--mobile">
+                </div>
+                <div class="accelerate__answers desktop-hide">
+                    <div class="accelerate__line"></div>
+                    <h1 class="accelerate__instant-answerds">Agents</h1>
+                    <p class="accelerate__p">
+                        Find trustworthy answers from across your knowledge base. Equip your team with the technical
+                        baseline to sell effectively and advise customers.
+                    </p>
+                    <img src="img/mobile-accelerate2.png" alt="" class="accelerate__img--mobile">
+                </div>
             </div>
         </div>
     </section>
@@ -141,7 +162,7 @@
             <h1 class="how__h1--header">How it works</h1>
             <p class="how__p--header">The foundations of fast, reliable and consistent incident management.</p>
         </div>
-        <img src="img/how.png" alt="how">
+        <img class="how__img--center" src="img/how.png" alt="how">
         <div class="how__bottom">
             <div class="how__block">
                 <h2 class="how__h2--bottom">Customize to fit your brand</h2>
@@ -174,23 +195,23 @@
                 <h1 class="built__h1--bottom">Agents</h1>
                 <p class="built__p--bottom">Put the right context at your team’s fingertips, instantly.</p>
             </div>
-            <div class="built__card"><img src="img/catalog.png" alt="" class="built__img--bottom">
+            <div class="built__card hiden-mobile"><img src="img/catalog.png" alt="" class="built__img--bottom">
                 <h1 class="built__h1--bottom">Catalog</h1>
                 <p class="built__p--bottom">Put the right context at your team’s fingertips, instantly.</p>
             </div>
-            <div class="built__card"><img src="img/workflows.png" alt="" class="built__img--bottom">
+            <div class="built__card hiden-mobile"><img src="img/workflows.png" alt="" class="built__img--bottom">
                 <h1 class="built__h1--bottom">Workflows</h1>
                 <p class="built__p--bottom">Automate incident processes and stay consistent at scale.</p>
             </div>
-            <div class="built__card"><img src="img/insights.png" alt="" class="built__img--bottom">
+            <div class="built__card hiden-mobile"><img src="img/insights.png" alt="" class="built__img--bottom">
                 <h1 class="built__h1--bottom">Insights</h1>
                 <p class="built__p--bottom">Understand trends, reduce noise, and improve response times.</p>
             </div>
-            <div class="built__card"><img src="img/integrations.png" alt="" class="built__img--bottom">
+            <div class="built__card hiden-mobile"><img src="img/integrations.png" alt="" class="built__img--bottom">
                 <h1 class="built__h1--bottom">Integrations</h1>
                 <p class="built__p--bottom">Connect the tools you already use, and take action from one place.</p>
             </div>
-            <div class="built__card--ai"><img src="img/ai.png" alt="" class="built__img--bottom">
+            <div class="built__card--ai hiden-mobile"><img src="img/ai.png" alt="" class="built__img--bottom">
                 <h1 class="built__h1--ai">AI</h1>
                 <p class="built__p--ai">Intelligence, context and power at the core of every incident.</p>
             </div>
@@ -207,10 +228,10 @@
                     that get results with Webflow.</p>
             </div>
             <div class="future__right--controller">
-                <button class="future__btn--controller future__btn--controllerDisabled" id="btnL" onclick="turn(1)"><img src="img/arrow-left.svg" alt=""
-                        class="future__img--btn"></button>
-                <button class="future__btn--controller" id="btnR" onclick="turn(-1)"><img src="img/arrow-right.svg" alt=""
-                        class="future__img--btn"></button>
+                <button class="future__btn--controller future__btn--controllerDisabled" id="btnL" onclick="turn(1)"><img
+                        src="img/arrow-left.svg" alt="" class="future__img--btn"></button>
+                <button class="future__btn--controller" id="btnR" onclick="turn(-1)"><img src="img/arrow-right.svg"
+                        alt="" class="future__img--btn"></button>
             </div>
         </div>
         <div class="future__slider--container">
@@ -232,7 +253,8 @@
                         <div>
                             <h1 class="future__h1--slider">BLOG</h1>
                         </div>
-                        <h2 class="future__h2--slider">Dermalogica’s formula for a scalable website testing program 2</h2>
+                        <h2 class="future__h2--slider">Dermalogica’s formula for a scalable website testing program 2
+                        </h2>
                         <div class="future__btn--slider">
                             <a href="" class="future__a--btn">Read blog</a>
                             <img src="img/arrow 2.png" alt="" class="future__img--btn">
@@ -256,7 +278,8 @@
                         <div>
                             <h1 class="future__h1--slider">BLOG</h1>
                         </div>
-                        <h2 class="future__h2--slider">Dermalogica’s formula for a scalable website testing program 4</h2>
+                        <h2 class="future__h2--slider">Dermalogica’s formula for a scalable website testing program 4
+                        </h2>
                         <div class="future__btn--slider">
                             <a href="" class="future__a--btn">Read blog</a>
                             <img src="img/arrow 2.png" alt="" class="future__img--btn">
@@ -280,7 +303,8 @@
                         <div>
                             <h1 class="future__h1--slider">BLOG</h1>
                         </div>
-                        <h2 class="future__h2--slider">Dermalogica’s formula for a scalable website testing program 6</h2>
+                        <h2 class="future__h2--slider">Dermalogica’s formula for a scalable website testing program 6
+                        </h2>
                         <div class="future__btn--slider">
                             <a href="" class="future__a--btn">Read blog</a>
                             <img src="img/arrow 2.png" alt="" class="future__img--btn">
@@ -289,10 +313,159 @@
                 </div>
             </div>
         </div>
+        <div class="future__mobile--controller">
+                <button class="future__btn--controller future__btn--controllerDisabled" id="btnL1" onclick="turn(1)"><img
+                        src="img/arrow-left.svg" alt="" class="future__img--btn"></button>
+                <button class="future__btn--controller" id="btnR1" onclick="turn(-1)"><img src="img/arrow-right.svg"
+                        alt="" class="future__img--btn"></button>
+            </div>
     </section>
     <section class="faqs">
-        <div class="faqs__main">
-            <h1 class="faqs__h1--top">FAQs</h1>
+        <div class="faqs__content">
+            <div class="faqs__top">
+                <h1 class="faqs__h1--top">FAQs</h1>
+            </div>
+            <div class="faqs__main">
+                <div class="faqs__accordion">
+                    <div class="faqs__accordion--top">
+                        <h1 class="faqs__h1--accordion">Built with security and privacy in mind since day one</h1>
+                        <button class="faqs__btn" onclick="openAccordion(this)"></button>
+                    </div>
+                    <div class="faqs__accordion--bottom">
+                        <p class="faqs__p">Single-tenant architecture <br>
+                            Each customer has their own application servers, database, and search index.</p>
+                        <p class="faqs__p">
+                            No training of LLMs <br>
+                            Realm uses enterprise-grade, private endpoints to access LLMS.</p>
+                        <p class="faqs__p">Data encryption <br>
+                            Your data is encrypted both at rest (AES-256) and in transit (TLS 1.2+).</p>
+                        <p class="faqs__p">
+                            Permissions enforcement <br>
+                            All knowledge in Realm mirrors existing user permissions.</p>
+                        <p class="faqs__p">
+                            Penetration tested <br>
+                            We undergo regular third-party pentests.</p>
+                    </div>
+                </div>
+                <div class="faqs__accordion">
+                    <div class="faqs__accordion--top">
+                        <h1 class="faqs__h1--accordion">Intelligent and trustworthy</h1>
+                        <button class="faqs__btn faqs__btn--open" onclick="openAccordion(this)"></button>
+                    </div>
+                    <div class="faqs__accordion--bottom faqs__accordion--closed">
+                        <p class="faqs__p">Single-tenant architecture <br>
+                            Each customer has their own application servers, database, and search index.</p>
+                        <p class="faqs__p">
+                            No training of LLMs <br>
+                            Realm uses enterprise-grade, private endpoints to access LLMS.</p>
+                        <p class="faqs__p">Data encryption <br>
+                            Your data is encrypted both at rest (AES-256) and in transit (TLS 1.2+).</p>
+                        <p class="faqs__p">
+                            Permissions enforcement <br>
+                            All knowledge in Realm mirrors existing user permissions.</p>
+                        <p class="faqs__p">
+                            Penetration tested <br>
+                            We undergo regular third-party pentests.</p>
+                    </div>
+                </div>
+                <div class="faqs__accordion">
+                    <div class="faqs__accordion--top">
+                        <h1 class="faqs__h1--accordion">Fast to adopt, easy to succeed with</h1>
+                        <button class="faqs__btn faqs__btn--open" onclick="openAccordion(this)"></button>
+                    </div>
+                    <div class="faqs__accordion--bottom faqs__accordion--closed">
+                        <p class="faqs__p">Single-tenant architecture <br>
+                            Each customer has their own application servers, database, and search index.</p>
+                        <p class="faqs__p">
+                            No training of LLMs <br>
+                            Realm uses enterprise-grade, private endpoints to access LLMS.</p>
+                        <p class="faqs__p">Data encryption <br>
+                            Your data is encrypted both at rest (AES-256) and in transit (TLS 1.2+).</p>
+                        <p class="faqs__p">
+                            Permissions enforcement <br>
+                            All knowledge in Realm mirrors existing user permissions.</p>
+                        <p class="faqs__p">
+                            Penetration tested <br>
+                            We undergo regular third-party pentests.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="unlock">
+        <h1 class="unlock__h1">Unlock efficient revenue <br> growth with Realm</h1>
+        <div class="unlock__btn--container">
+            <a href="" class="unlock__btn--blue">Get a demo</a>
+            <a href="" class="unlock__btn--white">Watch demo</a>
+        </div>
+    </section>
+    <section class="footer">
+        <div class="footer__top">
+            <div class="footer__left">
+                <h1 class="footer__h1">© 2025 Realm, Inc. <br> All rights reserved</h1>
+            </div>
+            <div class="footer__right">
+                <div class="footer__collum">
+                    <h2 class="footer__h1--collum">Company</h2>
+                    <ul class="footer__ul">
+                        <a href="" class="footer__link">
+                            <li class="footer__li">About</li>
+                        </a>
+                        <a href="" class="footer__link">
+                            <li class="footer__li">Terms</li>
+                        </a>
+                        <a href="" class="footer__link">
+                            <li class="footer__li">Legal</li>
+                        </a>
+                        <a href="" class="footer__link">
+                            <li class="footer__li">Press</li>
+                        </a>
+                    </ul>
+                </div>
+                <div class="footer__collum">
+                    <h2 class="footer__h1--collum">Product</h2>
+                    <ul class="footer__ul">
+                        <a href="" class="footer__link">
+                            <li class="footer__li">Platform</li>
+                        </a>
+                        <a href="" class="footer__link">
+                            <li class="footer__li">Interactions</li>
+                        </a>
+                        <a href="" class="footer__link">
+                            <li class="footer__li">SEO</li>
+                        </a>
+                    </ul>
+                </div>
+                <div class="footer__collum">
+                    <h2 class="footer__h1--collum">Resources</h2>
+                    <ul class="footer__ul">
+                        <a href="" class="footer__link">
+                            <li class="footer__li">Webinars and ebooks</li>
+                        </a>
+                        <a href="" class="footer__link">
+                            <li class="footer__li">Blog</li>
+                        </a>
+                        <a href="" class="footer__link">
+                            <li class="footer__li">Customer stories</li>
+                        </a>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="footer__bottom">
+            <div class="footer__a--bottom" style="grid-area: a;">
+                <a href="" class="footer__a">Your use of this site is subject to Terms of Service</a>
+            </div>
+            <div class="footer__media" style="grid-area: b;">
+                <a href="" class="footer__a--media"><img src="img/fb.png" alt="" class="footer__img"></a>
+                <a href="" class="footer__a--media"><img src="img/tw.png" alt="" class="footer__img"></a>
+                <a href="" class="footer__a--media"><img src="img/in.png" alt="" class="footer__img"></a>
+                <a href="" class="footer__a--media"><img src="img/yt.png" alt="" class="footer__img"></a>
+            </div>
+            <div class="footer__a--container" style="grid-area: c;">
+                <a href="" class="footer__a--right">Security</a>
+                <a href="" class="footer__a--right">Privacy Policy</a>
+            </div>
         </div>
     </section>
     <script src="js/index.js"></script>

@@ -1,0 +1,58 @@
+@use "mixins" as *;
+@use "variables" as *;
+
+.unlock {
+    @include fl($gap: 0);
+    flex-direction: column;
+    background-image: url(../img/unlock-bg.png);
+    background-size: 100%;
+
+    &__h1 {
+        @include textNormal(3.5rem, 700, 120%);
+        text-align: center;
+        margin-top: 6.25rem;
+        margin-bottom: 3.25rem;
+    }
+
+    &__btn--container {
+        @include fl($gap: 1rem);
+        margin-bottom: 6.25rem;
+    }
+
+    &__btn--blue {
+        @include textNormal(1rem, 600, 150%);
+        padding: 1rem 1.5rem;
+        background-color: $blue-btn;
+        border-radius: .625rem;
+    }
+
+    &__btn--white {
+        @include textNormal(1rem, 600, 150%);
+        padding: 1rem 1.5rem;
+        border: .125rem solid $light-bg;
+        border-radius: .625rem;
+    }
+
+    @media (max-width: 767px) {
+        & {
+            background-size: cover;
+        }
+
+        &__btn--container {
+            flex-direction: column;
+            width: 90%;
+        }
+
+        &__btn--blue, &__btn--white {
+            width: 100%;
+            text-align: center;
+        }
+    }
+
+    @media (min-width: 768px) and (max-width: 1023px) {}
+    & {
+            background-size: cover;
+        }
+
+    @media (min-width: 1024px) {}
+}

@@ -4,27 +4,53 @@
 .header {
     background-color: $dark-bg;
     padding: 16px 0;
+
     &__list {
         display: flex;
         gap: 24px;
     }
+
     &__fl {
         display: flex;
         justify-content: space-between;
         align-items: center
     }
+
     &__link {
         @include textNormal(1rem, 600, 150%);
     }
+
     &__link--home {
         @include textNormal(1.2rem, 900, 150%);
         gap: 4px;
     }
+
     &__logo {
         width: 1.2rem;
         margin-right: 8px;
     }
+
     &__right {
         gap: 1.5rem;
     }
+
+    &__burger {
+        display: none;
+    }
+
+    @media (max-width: 767px) {
+        &__burger {
+            display: block;
+            background-color: transparent;
+            border: none;
+        }
+
+        #mobile-hide {
+            display: none;
+        }
+    }
+
+    @media (min-width: 768px) and (max-width: 1023px) {}
+
+    @media (min-width: 1024px) {}
 }

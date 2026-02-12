@@ -1,0 +1,82 @@
+@use "mixins" as *;
+@use "variables" as *;
+
+.faqs {
+    background-color: $neutral-bg;
+    padding-top: 7.5rem;
+
+    &__accordion--bottom {
+        overflow: hidden;
+        max-height: 31.25rem;
+        transition: max-height 0.2s;
+    }
+
+    &__accordion--closed {
+        max-height: 0;
+    }
+
+    &__btn {
+        border: none;
+        background-color: transparent;
+        cursor: pointer;
+        background-image: url(../img/btn-blue.png);
+        width: 2rem;
+        height: 2rem;
+        transition: 0.2s;
+        margin-top: 1.5rem;
+    }
+
+    &__btn--open {
+        border: none;
+        background-color: transparent;
+        cursor: pointer;
+        background-image: url(../img/btn.png);
+        width: 2rem;
+        height: 2rem;
+    }
+
+    &__content {
+        width: 50%;
+        margin: 0 auto;
+        padding-bottom: 7.5rem;
+    }
+
+    &__main {
+        margin-top: 3.25rem;
+    }
+
+    &__h1--top {
+        @include textNormal(2.75rem, 700, 3.5rem, $dark-font);
+    }
+
+    &__accordion--top {
+        border-top: .125rem #CCCCCC solid;
+        @include fl(space-between, $gap: 0);
+    }
+
+    &__h1--accordion {
+        @include textNormal(1.5rem, 700, 140%, $dark-font);
+        margin-top: 1.5rem;
+    }
+
+    &__accordion--bottom {
+        @include fl(start, stretch, 1.5rem);
+        flex-direction: column;
+        margin: 0.75rem 0;
+    }
+
+    &__p {
+        @include textNormal(1rem, 400, 150%, $dark-font);
+    }
+
+    @media (max-width: 767px) {
+    }
+
+    @media (min-width: 768px) and (max-width: 1023px) {
+        &__h1--accordion {
+            width: 27.5rem;
+        }
+    }
+
+    @media (min-width: 1024px) {}
+}

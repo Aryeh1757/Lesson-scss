@@ -52,4 +52,46 @@
         border-top: $neutral-font solid 2px;
         padding-top: 1.625rem;
     }
+
+    @media (max-width: 767px) {
+        &__container {
+            display: block;
+        }
+
+        &__btn {
+            display: none;
+        }
+
+        &__h1 {
+            margin-bottom: 2rem;
+        }
+
+        &__p {
+            margin-bottom: 1.5rem;
+        }
+
+        .desktop-hide {
+            margin-top: 1.5rem;
+        }
+    }
+
+    @media (min-width: 768px) and (max-width: 1023px) {
+        .desktop-hide {
+            display: none;
+        }
+
+        &__mobile {
+            display: none;
+        }
+    }
+
+    @media (min-width: 1024px) {
+        .desktop-hide {
+            display: none;
+        }
+
+        &__mobile {
+            display: none;
+        }
+    }
 }
